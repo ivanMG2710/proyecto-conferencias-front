@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+ :root{
+    --blue:#214A91;
+    --black:#444;
+    --white:#fff;
+    --light-color:#777;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --border-b: .2rem solid var(--blue);
+    --box-shadow-c: .5rem .5rem 0 rgba(33, 74, 145, 0.2);
+    --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, .1); 
+}
+
+
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: none;
+ }
+ 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+
+
+/* header section*/
+.header{
+    padding: 2rem;
+    border-bottom: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+.header .logo{
+    font-size: 2rem;
+    color:var(--black);
+}
+
+/* home section */
+.principal{
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 20rem;
+}
+
+.principal .image{
+    flex: 1 1 45rem;
+}
+
+.principal .image img{
+    width: 100%;
+}
+
+.principal .content{
+    flex: 1 1 45rem;
+}
+
+.principal .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 1.8;
+}
+
+.principal .content p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.btn{
+     display: inline-block;
+     margin-top: 1rem;
+     padding: 0.8rem;
+     padding-left: 1rem;
+     border: var(--border-b);
+     border-radius: .5rem;
+     box-shadow: var(--box-shadow-c);
+     color: var(--blue);
+     cursor: pointer;
+     font-size: 1.8rem;
+}
+
+.btn span{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    background: var(--blue);
+    color: var(--white);
+    margin-left: .5rem;
+}
+
+.btn:hover{
+     background: var(--blue);
+     color: var(--white);
+}
+
+.btn:hover span{
+    color: var(--blue);
+    background: var(--white);
+    margin-left: 1rem;
+}
+
+
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}

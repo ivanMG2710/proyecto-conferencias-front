@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Congreso ITL</title>
+
+     <!-- font-awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+     <!-- bootstrap cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <a class="logo"> <img src="../images/logo1.png"> <span>Congreso ITL</span></a>
+    
+                <nav class="nav">
+                    <a href="../index.html">Principal</a>
+                    <a href="participantes.html">Participantes</a>
+                    <a href="registro.html">Registro</a>
+                    <a href="conferencias.html">Conferencia</a>
+                </nav>
+    
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- editar section starts -->
+    <section class="signUp">
+        <div class="form-signup">
+            <h3 class="heading"> Editar </h3>
+
+            <div class="content">
+                <form action="">
+                    <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">Nombre</span>
+                            <input type="text" placeholder="Ingrese nombre" required id="nombre">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Apellidos</span>
+                            <input type="text" class="password" placeholder="Ingrese apellidos" required id="apellidos">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Correo</span>
+                            <input type="email" placeholder="Ingrese correo" required id="correo">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Twitter</span>
+                            <input type="text" placeholder="Ingrese usuario twitter" required id="twitter">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Avatar</span>
+                            <div class="avatar-options">
+                                <label>
+                                    <input type="radio" name="avatar" value="avatar1" checked id="avatar1">
+                                    <img src="../images/avatar1.jpg" alt="Avatar 1">
+                                </label>
+                                <label>
+                                    <input type="radio" name="avatar" value="avatar2" id="avatar2">
+                                    <img src="../images/avatar2.jpg" alt="Avatar 2">
+                                </label>
+                                <label>
+                                    <input type="radio" name="avatar" value="avatar3" id="avatar3">
+                                    <img src="../images/avatar3.jpg" alt="Avatar 3">
+                                </label>
+                                <label>
+                                    <input type="radio" name="avatar" value="avatar4" id="avatar4">
+                                    <img src="../images/avatar4.jpg" alt="Avatar 4">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Guardar" id="guardar">
+                    </div>
+                    <div class="button">
+                        <input onclick="location.href='participantes.html'" type="button" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- editar section ends -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/editarStyle.css">
+
+
+
+    
+    <!-- script JavaScript  -->
+    <script>
+        let menu = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.header .nav');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+    <script src="../js/scriptEditarParti.js"></script>
+</body>
+</html>

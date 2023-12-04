@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Congreso ITL</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <a class="logo"> <img src="../images/logo1.png"> <span>Congreso ITL</span></a>
+
+                <nav class="nav">
+                    <a href="../index.html">Principal</a>
+                    <a href="participantes.html">Participantes</a>
+                    <a href="registro.html">Registro</a>
+                    <a href="">Conferencia</a>
+                </nav>
+
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- conferencias section starts -->
+    <section class="conferencias" id="conferencias">
+        <h1 class="heading"><span>Conferencias</span></h1>
+
+        <div class="table-container">
+            <table class="conferencias-table">
+                <thead>
+                    <tr>
+                        <th>Horario</th>
+                        <th>Título de la Conferencia</th>
+                        <th>Nombre del Conferencista</th>
+                        <th>Registro de Asistencia</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                    <!-- Aquí irán los datos de cada conferencia en filas -->
+                    <!--
+                    <tr>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Conferencia 1</td>
+                        <td>Nombre del Conferencista 1</td>
+                        <td><a href="registroAsistencia.html">Registro</a></td>
+                    </tr>
+                    -->
+                    <!-- ejemplo -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- conferencias section ends -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/conferenciasStyle.css">
+
+
+
+
+
+    <!-- script JavaScript  -->
+    <script>
+        let menu = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.header .nav');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+    <script src="../js/scriptConferencias.js"></script>
+</body>
+</html>

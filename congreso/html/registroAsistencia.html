@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Congreso ITL</title>
+
+     <!-- font-awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+     <!-- bootstrap cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <a class="logo"> <img src="../images/logo1.png"> <span>Congreso ITL</span></a>
+    
+                <nav class="nav">
+                    <a href="../index.html">Principal</a>
+                    <a href="participantes.html">Participantes</a>
+                    <a href="registro.html">Registro</a>
+                    <a href="conferencias.html">Conferencia</a>
+                </nav>
+    
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- registro asistencia section starts -->
+    <section class="signUp">
+        <div class="form-signup">
+            <h3 class="heading"> Registro de Asistencia </h3>
+
+            <div class="content">
+                <form >
+                    <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">Conferencia</span>
+                            <!-- Mostrar la conferencia previamente seleccionada -->
+                            <span class="conferencia-seleccionada" id="nombreConferencia"></span>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Participantes</span>
+                            <select id="seleccion">
+                                <!--
+                                <option value="participante1">Participante 1</option>
+                                <option value="participante2">Participante 2</option>
+                                -->
+                                <!-- lista participantes -->
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Confirmar asistencia</span>
+                            <div class="checkbox-options">
+                                <label>
+                                    <input type="checkbox" name="asistencia" value="si" id="si">
+                                    Sí
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="asistencia" value="no" id="no">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input type="button" value="Guardar Registro" id="guardar">
+                    </div>
+                    <div class="button">
+                        <input onclick="location.href='conferencias.html'" type="button" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- registro asistencia section ends -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/asistenciaStyle.css">
+
+    
+    <!-- script JavaScript  -->
+    <script src="../js/scriptRegistro.js"></script>
+    
+</body>
+</html>
